@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A Computer Engineering undergrad fueled by a passion for crafting innovation at the crossroads of hardware, software, firmware, and networks — where every layer brings ideas to life.">
+  <meta name="keywords" content="Dalath Samith Mendis, Samith Mendis, Computer Engineering, Computer Hardware, Software Development, Network Security, Embedded Systems, Borella, Colombo, Sri Lanka">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
+  <title>Samith Mendis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f0f4f8;
+      color: #1a1a1a;
+      overflow-x: hidden;
+      font-size: 18px;
+    }
+
+    .welcome-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      text-align: center;
+      opacity: 1;
+      transition: opacity 1s ease-out;
+    }
+
+    .welcome-screen h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .welcome-screen p {
+      font-size: 1.5em;
+      animation: fadeIn 3s ease-in;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .preload {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      padding: 60px 20px 30px;
+      text-align: center;
+      border-bottom: 4px solid #f9c846;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.5em;
+      color: #f9c846;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin: 10px 0;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-size: 1.1em;
+    }
+
+    header a {
+      color: #f9c846;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+      backdrop-filter: blur(15px);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .container:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2c5364;
+      margin-bottom: 20px;
+      position: relative;
+      font-size: 1.6em;
+    }
+
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #f9c846;
+      display: block;
+      margin-top: 8px;
+      border-radius: 2px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      font-size: 1.05em;
+    }
+
+    section p {
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #203a43;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+      border-top: 4px solid #f9c846;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="welcome-screen" id="welcomeScreen">
+    <div>
+      <h1>WELCOME!</h1>
+      <p>Engineering the future, one layer at a time.</p>
+    </div>
+  </div>
+
+  <div class="preload" id="preloadScreen">
+    <div class="loader"></div>
+  </div>
+
+  <header>
+    <h1>Samith Mendis</h1>
+    <p class="subtitle">Computer Engineering Undergraduate</p>
+    <p>📍 23/60, Magazine Road, Borella, Colombo, Sri Lanka</p>
+    <p>📞 +94 742 229 827 | 📧 dsamithmendis19988@gmail.com</p>
+  </header>
+
+  <section class="container">
+    <h2>🌟 Summary</h2>
+    <p>I'm a passionate Computer Engineering freshman with a strong base in hardware, firmware, network and software integration. I thrive on solving real-world tech challenges and am eager to learn new technologies, dive into innovation, and build cool, meaningful projects!</p>
+  </section>
+
+  <section class="container">
+    <h2>🛠️ Skills</h2>
+    <ul>
+      <li>🖥️ Computer Hardware</li>
+      <li>💻 Software Development</li>
+      <li>🔐 Network Security</li>
+      <li>⚙️ Embedded Systems</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>🎓 Education</h2>
+    <ul>
+      <li><strong>OnGoing (2024-Present)</strong> B.Sc. (Hons) in Computer Engineering at Open University of Sri Lanka</li>
+      <li><strong>Completed (2021-2024)</strong> Certificate in Physical Sciences at Open University of Sri Lanka</li>
+      <li><strong>Studied (2018-2020)</strong> GCE A/L at D.S. Senanayake College Colombo - 07</li>
+      <li><strong>Completed (2007-2017)</strong> GCE O/L at D.S. Senanayake College Colombo - 07</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>📜 Certifications</h2>
+    <ul>
+      <li>✅ <a href="https://www.credly.com/badges/36cd1571-dd04-4577-88c7-d8222fad4613/public_url">Computer Hardware Basics</a></li>
+      <li>✅ <a href="https://www.sololearn.com/certificates/CC-KUXGLS6Z">C Intermediate</a></li>
+      <li>✅ <a href="https://www.sololearn.com/certificates/CC-XYQEBB7N">Java Intermediate</a></li>
+      <li>✅ <a href="https://www.sololearn.com/certificates/CC-NP7ORH6Y">Introduction to C</a></li>
+      <li>✅ <a href="https://www.sololearn.com/certificates/CC-UUWDEKEZ">Introduction to Java</a></li>
+      <li>✅ <a href="https://www.life-global.org/certificate/a5071d49-c936-4a25-8b31-1a5a42bb4e57">AI for Beginners</a></li>
+      <li>✅ <a href="https://www.life-global.org/certificate/de934fd5-e1e9-4497-99aa-fbc78a0e8855">Data Science & Analytics</a></li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>🏉 Academic Achievements & Honors</h2>
+    <p><strong>Rugby Player | D. S. Senanayake College (2012 - 2016)</strong></p>
+    <ul>
+      <li>🏅 2012 DSSC Colourman (Rugby)</li>
+      <li>🏅 2013 DSSC Colourman (Rugby)</li>
+      <li>🏅 2014 DSSC Colourman (Rugby)</li>
+      <li>🏅 2015 DSSC Colourman (Rugby)</li>
+      <li>🏅 2016 DSSC Colourman (Rugby)</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>🌐 Languages</h2>
+    <ul>
+      <li>🗣️ Sinhala (Native)</li>
+      <li>🗣️ English (Limited Working)</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>🔗 LinkedIn</h2>
+    <div id="linkedin-badge-container" style="overflow-x: auto;"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Samith Mendis. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.onload = function () {
+      document.getElementById('preloadScreen').style.display = 'none';
+      setTimeout(function () {
+        document.getElementById('welcomeScreen').style.opacity = '0';
+        setTimeout(function () {
+          document.getElementById('welcomeScreen').style.display = 'none';
+        }, 1000);
+      }, 3000);
+    };
+  </script>
+
+  <script>
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const badgeTheme = prefersDark ? 'dark' : 'light';
+
+    const badgeHTML = `
+      <div class="badge-base LI-profile-badge"
+        data-locale="en_US"
+        data-size="medium"
+        data-theme="${badgeTheme}"
+        data-type="VERTICAL"
+        data-vanity="dsamithmendis"
+        data-version="v1">
+        <a class="badge-base__link LI-simple-link" href="https://lk.linkedin.com/in/dsamithmendis?trk=profile-badge">
+          linkedin.com/in/dsamithmendis
+        </a>
+      </div>
+    `;
+
+    document.getElementById("linkedin-badge-container").innerHTML = badgeHTML;
+
+    const script = document.createElement('script');
+    script.src = "https://platform.linkedin.com/badges/js/profile.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => location.reload());
+  </script>
+</body>
+</html>
