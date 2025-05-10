@@ -1,10 +1,10 @@
 /* Utility background */
-.bg-light {
+.certifications .skills {
   background-color: #e5e7eb;
 }
 
 /* Sections */
-.about .projects {
+.aboutme .projects {
   max-width: 768px;
   margin: auto;
   padding: 3rem 1rem;
