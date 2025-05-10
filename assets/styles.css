@@ -1,4 +1,4 @@
-.bg-light {
+.bg_light {
   background-color: #e5e7eb;
 }
 
@@ -31,7 +31,7 @@
   margin-top: 0.25rem;
 }
 
-.social-links {
+.social_links {
   display: flex;
   justify-content: center;
   gap: 1rem;
