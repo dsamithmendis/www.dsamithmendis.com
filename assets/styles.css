@@ -35,8 +35,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: -1rem;
+  gap: 1rem;
   margin-top: 1rem;
+}
+
+.social_links a {
+  align-items: center;
+  gap: 10px
 }
 
 .project {
