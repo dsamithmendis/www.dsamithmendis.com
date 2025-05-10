@@ -34,7 +34,8 @@
 .social_links {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: 10rem;
   margin-top: 1rem;
 }
 
