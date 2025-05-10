@@ -1,4 +1,3 @@
-
 # Samith Mendis | Portfolio Website
 
 This is a personal portfolio website built using HTML, CSS (Tailwind + custom), and hosted with external links to GitHub and LinkedIn.
