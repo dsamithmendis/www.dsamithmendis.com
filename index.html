@@ -11,6 +11,18 @@
   
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <script>
+    // Extend TailwindCSS with Ubuntu font
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            ubuntu: ['Ubuntu', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
   
 </head>
 <body class="font-ubuntu text-gray-800 bg-gray-100">
