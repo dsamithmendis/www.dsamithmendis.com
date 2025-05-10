@@ -6,7 +6,7 @@ This is a personal portfolio website built using HTML, CSS (Tailwind + custom), 
 ## 📁 Project Structure
 
 ```
-portfolio-site-separate-css/
+www.dsamithmendis.com/
 ├── index.html
 └── assets/
     └── styles.css
