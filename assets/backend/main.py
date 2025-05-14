@@ -2,11 +2,16 @@ from flask import Flask, render_template, request, redirect, url_for
 import smtplib
 import os
 
-app = Flask(__name__, template_folder='../../', static_folder='../../static', static_url_path='/static')
+app = Flask(__name__,
+            template_folder='../../',
+            static_folder='../../assets/frontend',
+            static_url_path='/assets/frontend')
+
 
 @app.route("/", methods=["GET"])
 def index():
     return render_template("index.html")
+
 
 @app.route("/send", methods=["POST"])
 def send():
@@ -33,6 +38,7 @@ def send():
         return "Message sent successfully!"
     except Exception as e:
         return f"Error: {e}"
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
