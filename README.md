@@ -1,4 +1,3 @@
-
 # Portfolio Website
 
 A personal portfolio website built with Flask, HTML, CSS (Tailwind + custom), showcasing skills, projects, and contact information.
@@ -14,14 +13,14 @@ A personal portfolio website built with Flask, HTML, CSS (Tailwind + custom), sh
 ## 📁 Project Structure
 
 ```
-portfolio/
+www.dsamithmendis.com/
 ├── assets/
 │   ├── backend/
-│   │   └── main.py        # Flask server
+│   │   └── main.py
 │   └── frontend/
-│       └── main.css       # Custom styles
-├── index.html             # Main portfolio page
-└── README.md             # Project documentation
+│       └── main.css
+├── index.html
+└── README.md
 ```
 
 ## 🛠️ Technologies Used
