@@ -51,7 +51,12 @@ To enable the contact form:
 
 ## 📜 License
 
-This project is licensed under the MIT License
+This software is licensed for individual or commercial use under a proprietary license. Redistribution, modification, or resale is **not permitted** without written authorization from the owner.
 
----
-© 2025 Samith Mendis
+See [LICENSE](LICENSE) for full terms.
+
+## 👨‍💻 Author
+
+**Samith Mendis**  
+GitHub: [@dsamithmendis](https://github.com/dsamithmendis)  
+Email: [samithmendis.01@gmail.com]
