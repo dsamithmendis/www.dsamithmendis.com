@@ -1,38 +1,58 @@
-# Samith Mendis | Portfolio Website
 
-This is a personal portfolio website built using HTML, CSS (Tailwind + custom), and hosted with external links to GitHub and LinkedIn.
+# Portfolio Website
 
-## 📁 Project Structure
-
-```
-www.dsamithmendis.com/
-├── index.html
-└── assets/
-    └── styles.css
-```
+A personal portfolio website built with Flask, HTML, CSS (Tailwind + custom), showcasing skills, projects, and contact information.
 
 ## 🚀 Features
 
 - Responsive layout using Tailwind CSS
-- About, Skills, Projects, Certifications, and Contact sections
-- Integrated contact form (Formspree placeholder)
-- External links to GitHub, LinkedIn, and Instagram
+- Dynamic sections: About, Skills, Projects, Certifications
+- Contact form with email integration
+- Social media links
+- Clean and professional design
 
-## 📦 How to Use
+## 📁 Project Structure
 
-1. **Clone or Download**
-   - Download the ZIP file or clone the repository if hosted on GitHub.
+```
+portfolio/
+├── assets/
+│   ├── backend/
+│   │   └── main.py        # Flask server
+│   └── frontend/
+│       └── main.css       # Custom styles
+├── index.html             # Main portfolio page
+└── README.md             # Project documentation
+```
 
-2. **Open in Browser**
-   - Simply open `index.html` in your web browser.
+## 🛠️ Technologies Used
 
-3. **Edit Contact Form**
-   - Update the `form` action URL in `index.html` with your own [Formspree](https://formspree.io/) endpoint.
+- **Backend**: Python Flask
+- **Frontend**: HTML, Tailwind CSS, Custom CSS
+- **Email**: SMTP integration for contact form
 
-## 📸 Preview
+## 💻 Development
 
-This website presents your personal and professional achievements and can be customized further.
+1. Make sure Python 3.12+ is installed
+2. Install dependencies:
+   ```
+   pip install flask
+   ```
+3. Run the Flask server:
+   ```
+   python assets/backend/main.py
+   ```
+4. Visit `http://localhost:5000` in your browser
+
+## 📧 Contact Form Setup
+
+To enable the contact form:
+1. Set up environment variables:
+   - GMAIL_USER
+   - GMAIL_APP_PASSWORD
+
+## 📜 License
+
+This project is licensed under the MIT License
 
 ---
-
 © 2025 Samith Mendis
