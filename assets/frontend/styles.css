@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #f3f4f6; /* Equivalent to Tailwind's gray-100 */
   color: #1f2937; /* Equivalent to Tailwind's gray-800 */
