@@ -1,6 +1,11 @@
 # Portfolio Website
 
+**Developed by Samith Mendis**  
+© 2025 All Rights Reserved
+
 A personal portfolio website built with Flask, HTML, CSS (Tailwind + custom), showcasing skills, projects, and contact information.
+
+> ⚠️ This product is proprietary and licensed. Unauthorized redistribution or resale is strictly prohibited.
 
 ## 🚀 Features
 
