@@ -1,69 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Samith Mendis</title>
-  
-  <link rel="stylesheet" href="assets/frontend/styles.css">
-  
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  <script>
-    // Extend TailwindCSS with Ubuntu font
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            ubuntu: ['Ubuntu', 'sans-serif'],
-          }
-        }
-      }
-    };
-  </script>
-  
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="assets/frontend/styles.css" />
 </head>
 <body class="font-ubuntu text-gray-800 bg-gray-100">
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>SAMITH MENDIS</h1>
-    <p class="subtitle">Computer Engineering | Undergraduate</p>
-    <p class="location">Colombo 00800, Western Province, Sri Lanka</p>
-  <div class="social_links">
-    <a href="https://github.com/dsamithmendis" target="_blank">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="68" height="68" style="vertical-align:middle;">
-    </a>
-    <a href="https://www.linkedin.com/in/dsamithmendis" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="60" height="60" style="vertical-align:middle;">
-    </a>
-    <a href="https://www.facebook.com/dsamithmendis" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="50" height="50" style="vertical-align:middle;">
-    </a>
-    <a href="https://wa.me/94742229827" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="40" height="40" style="vertical-align:middle;">
-    </a>
-  </div>
-
+  <section class="hero text-center py-10">
+    <h1 class="text-4xl font-bold mb-2">SAMITH MENDIS</h1>
+    <p class="text-xl">Computer Engineering | Undergraduate</p>
+    <p class="text-md text-gray-600">Colombo 00800, Western Province, Sri Lanka</p>
+    <div class="social_links flex justify-center gap-4 mt-4">
+      <a href="https://github.com/dsamithmendis" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="40" />
+      </a>
+      <a href="https://www.linkedin.com/in/dsamithmendis" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="40" />
+      </a>
+      <a href="https://www.facebook.com/dsamithmendis" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="40" />
+      </a>
+      <a href="https://wa.me/94742229827" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="40" />
+      </a>
+    </div>
   </section>
 
-  <!-- AboutMe Section -->
+  <!-- About Me -->
   <section class="section">
     <h2>About Me</h2>
     <p>
       Passionate about crafting efficient and scalable software solutions, 
-      I bring a strong foundation in programming, problem-solving, and system design. 
-      Experienced in software development principles, algorithms, and debugging, with a keen 
-      interest in building innovative applications. A proactive learner and collaborative team player, 
-      eager to apply technical knowledge to real-world challenges. Seeking opportunities to grow, contribute, and 
-      develop cutting-edge software in a dynamic environment.
+      I bring a strong foundation in programming, problem-solving, and system design...
     </p>
   </section>
 
-  <!-- Skills Section -->
-  <section class="section bg_light">
+  <!-- Skills -->
+  <section class="section bg-light">
     <h2>Skills</h2>
     <ul class="list">
       <li>Programming: Python, C, Java, PHP</li>
@@ -74,7 +58,7 @@
     </ul>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section class="section">
     <h2>Projects</h2>
     <div class="project">
@@ -83,28 +67,11 @@
       <p class="tech">Technologies: HTML, CSS</p>
       <a href="https://github.com/dsamithmendis/TechnoHacks_Portfolio">View on GitHub</a>
     </div>
-    <div class="project">
-      <h3>Contact Form</h3>
-      <p>Developed a responsive contact form during an internship at TechnoHacks Solutions Pvt. Ltd.</p>
-      <p class="tech">Technologies: HTML, CSS, JavaScript</p>
-      <a href="https://github.com/dsamithmendis/TechnoHacks_ContactForm">View on GitHub</a>
-    </div>
-      <div class="project">
-      <h3>Voice Assistant</h3>
-      <p>Developed a voice assistant during an internship at CodeAlpha</p>
-      <p class="tech">Technologies: Python</p>
-      <a href="https://github.com/dsamithmendis/CodeAlpha_VoiceAssistant">View on GitHub</a>
-    </div>
-    <div class="project">
-      <h3>Fibonacci Generator</h3>
-      <p>Developed a fibonacci generator during an internship at CodeAlpha</p>
-      <p class="tech">Technologies: Python</p>
-      <a href="https://github.com/dsamithmendis/CodeAlpha_FibonacciGenerator">View on GitHub</a>
-    </div>
+    <!-- Add other projects similarly -->
   </section>
 
-  <!-- Certifications Section -->
-  <section class="section bg_light">
+  <!-- Certifications -->
+  <section class="section bg-light">
     <h2>Certifications</h2>
     <ul class="list">
       <li>Python Programming at University of Moratuwa</li>
@@ -116,10 +83,10 @@
     </ul>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section class="section contact">
     <h2>Contact</h2>
-    <form action="/send" method="POST">
+    <form action="/send" method="POST" class="contact-form">
       <label>Name</label>
       <input type="text" name="name" placeholder="Enter Name" required />
       <label>Email</label>
