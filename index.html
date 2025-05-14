@@ -119,13 +119,13 @@
   <!-- Contact Section -->
   <section class="section contact">
     <h2>Contact</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
+    <form action="/send" method="POST">
       <label>Name</label>
-      <input type="text" name="name" required />
+      <input type="text" name="name" placeholder="Enter Name" required />
       <label>Email</label>
-      <input type="email" name="email" required />
+      <input type="email" name="email" placeholder="Enter Email" required />
       <label>Message</label>
-      <textarea name="message" rows="4" required></textarea>
+      <textarea name="message" rows="4" placeholder="Enter Message" required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
