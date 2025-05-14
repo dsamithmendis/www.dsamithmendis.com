@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Samith Mendis</title>
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
 
   <!-- External CSS -->
-  <<link rel="stylesheet" href="/assets/frontend/styles.css">
+  <link rel="stylesheet" href="/assets/frontend/styles.css">
 </head>
-<body class="font-ubuntu text-gray-800 bg-gray-100">
+
+<body class="font-ubuntu">
 
   <!-- Hero Section -->
-  <section class="hero text-center py-10">
-    <h1 class="text-4xl font-bold mb-2">SAMITH MENDIS</h1>
-    <p class="text-xl">Computer Engineering | Undergraduate</p>
-    <p class="text-md text-gray-600">Colombo 00800, Western Province, Sri Lanka</p>
-    <div class="social_links flex justify-center gap-4 mt-4">
+  <section class="hero">
+    <h1>SAMITH MENDIS</h1>
+    <p>Computer Engineering | Undergraduate</p>
+    <p>Colombo 00800, Western Province, Sri Lanka</p>
+    <div class="social_links">
       <a href="https://github.com/dsamithmendis" target="_blank">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="40" />
       </a>
@@ -38,42 +37,41 @@
   </section>
 
   <!-- About Me -->
-  <section class="section">
+  <section class="section about">
     <h2>About Me</h2>
     <p>
-      Passionate about crafting efficient and scalable software solutions, 
+      Passionate about crafting efficient and scalable software solutions,
       I bring a strong foundation in programming, problem-solving, and system design...
     </p>
   </section>
 
   <!-- Skills -->
-  <section class="section bg_light">
+  <section class="section skills">
     <h2>Skills</h2>
-    <ul class="list">
+    <ul>
       <li>Programming: Python, C, Java, PHP</li>
       <li>Web Development: HTML, CSS, JavaScript</li>
       <li>Web-Based Platform: GitHub, phpMyAdmin</li>
       <li>IDE Softwares: Visual Studio, PyCharm</li>
-      <li>Frameworks: Django(Python)</li>
+      <li>Frameworks: Django (Python)</li>
     </ul>
   </section>
 
   <!-- Projects -->
-  <section class="section">
+  <section class="section projects">
     <h2>Projects</h2>
     <div class="project">
       <h3>Portfolio</h3>
       <p>Developed a personal portfolio website during an internship at TechnoHacks Solutions Pvt. Ltd.</p>
-      <p class="tech">Technologies: HTML, CSS</p>
+      <p><strong>Technologies:</strong> HTML, CSS</p>
       <a href="https://github.com/dsamithmendis/TechnoHacks_Portfolio">View on GitHub</a>
     </div>
-    <!-- Add other projects similarly -->
   </section>
 
   <!-- Certifications -->
-  <section class="section bg_light">
+  <section class="section certifications">
     <h2>Certifications</h2>
-    <ul class="list">
+    <ul>
       <li>Python Programming at University of Moratuwa</li>
       <li>Python Django 101 at Simplilearn</li>
       <li>C Programming at Sololearn</li>
@@ -86,7 +84,7 @@
   <!-- Contact -->
   <section class="section contact">
     <h2>Contact</h2>
-    <form action="/send" method="POST" class="contact-form">
+    <form action="/send" method="POST">
       <label>Name</label>
       <input type="text" name="name" placeholder="Enter Name" required />
       <label>Email</label>
@@ -101,4 +99,5 @@
     © 2025 All Rights Reserved By Samith Mendis
   </footer>
 </body>
+
 </html>
