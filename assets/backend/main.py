@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Route for displaying the contact form
 @app.route("/")
 def index():
-    return render_template("index.html")  # Render the HTML form from the templates folder
+    return render_template("index.html")  # Render the HTML
 
 # Route to handle form submission (POST request from the form)
 @app.route("/send", methods=["POST"])
